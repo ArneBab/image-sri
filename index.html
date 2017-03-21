@@ -1,0 +1,46 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset='utf-8'>
+	<title>image-sri</title>
+	<link rel='stylesheet' href='./theme.css' integrity="sha384-B37GBZEn6mTKFTe3Iyt9s9zh/d3+QRWgm1Z+Tq/iffnjQvo/0ibHlHhKmFIqQURH" crossorigin="anonymous">
+	<link rel='stylesheet' href='./theme-unverified.css' integrity="sha384-fake" crossorigin="anonymous">
+	<style>
+	.parent {
+	  position: relative;
+	  top: 0;
+	  left: 0;
+	}
+	#download {
+	  position: relative;
+	  z-index: 2;
+	  top: 0;
+	  left: 0;
+	}
+	.error {
+	  position: absolute;
+	  top: 0px;
+	  left: 0px;
+	}</style>
+</head>
+
+<body>
+
+<p>The following image was verified with sha-384 without using JavaScript</p>
+
+<div class="parent">
+<span id='download'></span>
+<img class='error' alt='error' src='failed.png'>
+</div>
+
+<p>This page was originally created by me (Beardog): <a href="https://chaoswebs.net/image-sri/">https://chaoswebs.net/</a>.</p>
+
+<p><a href='http://www.draketo.de/'>Arne Babenhauserheide</a> added a check whether the browser supports <a href="https://www.w3.org/TR/SRI/">Subresource-Integrity (SRI)</a> at all. If you see <a href="no-sri.png">no-sri.png</a> instead of the <a href="wtactics-raven.png">raven</a>, then your browser does not verify the Subresource-Integrity. If you see <a href="failed.png">failed.png</a>, then the Subresource-Integrity check failed. Read the source for details.</p>
+
+<p>The success-image is <a href="wtactics-raven-large.png">raven from WTactics</a> (scaled and cropped), licensed <a href="./README">under GPLv2 or later</a> and created for the <a href="http://wtactics.org/">WTactics project</a>.</p>
+
+<p>This page is also <a href='https://github.com/beardog108/image-sri/'>on Github</a>.</p>
+
+</body>
+
+</html>
